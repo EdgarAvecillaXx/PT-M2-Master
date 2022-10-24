@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1080px) {
+    .cardsContainer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+
+.cardsContainer{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}

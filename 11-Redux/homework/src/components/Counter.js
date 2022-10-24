@@ -5,33 +5,43 @@ import { increment, decrement } from '../actions';
 class Counter extends Component {
     // Extra Credit
     incrementIfOdd = () => {
+      if (!(this.props.count % 2 === 0)) this.props.increment(2);
       //Implementar una función de incremento que sólo aumenta si el valor del contador es impar
     };
     // Extra Credit
     incrementAsync = () => {
-        //  Implementar una función de incremento que aumenta después de esperar un segundo
+      //  Implementar una función de incremento que aumenta después de esperar un segundo
+      setTimeout(() => {
+        this.props.increment(3);
+      }, 1000);
     };
 
     render() {
         // Completa las funciones onClick de los botones
         // Al hacer clic en estos botones, el recuento debe disminuir o aumentar en consecuencia
         return (
-            <p>
-                Clickeado: {this.props.count} veces
-                <button onClick={() => {/* Completar */ }}>
-                    + {/* Incremeta */}
-                </button>
-                <button onClick={() => {/* Completar */ }}>
-                    -  {/* Decrementa */}
-                </button>
-                 {/* Si quieres hacer los extra credit puede descomentar las lineas de abajo */}
-                {/* <button onClick={this.incrementIfOdd}>
-                    incrementa si es impar
-                </button>
-                <button onClick={this.incrementAsync}>
-                    Incrementa despues de un segundos
-                </button>  */}
-            </p>
+          <p>
+            Clickeado: {this.props.count} veces
+            <button
+              onClick={() => {
+                this.props.increment(1);
+              }}>
+              + {/* Incremeta */}
+            </button>
+            <button
+              onClick={() => {
+                this.props.decrement(-1);
+              }}>
+              - {/* Decrementa */}
+            </button>
+            {/* Si quieres hacer los extra credit puede descomentar las lineas de abajo */}
+            <button onClick={this.incrementIfOdd}>
+              incrementa si es impar
+            </button>
+            <button onClick={this.incrementAsync}>
+              Incrementa despues de un segundos
+            </button>
+          </p>
         );
     }
 }

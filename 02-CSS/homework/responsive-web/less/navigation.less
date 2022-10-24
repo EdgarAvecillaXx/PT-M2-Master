@@ -1,1 +1,41 @@
 // Código de Nav acá
+@import "variables.less";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: @nav-bg;
+  flex-flow: column;
+  align-items: center;
+  height: 100px;
+  padding: 20px 0 10px 0;
+  width: 100vw;
+  margin-bottom: 1rem;
+  border-bottom: 2px @nav-border solid;
+
+  .container-navbar--title {
+    font-size: xx-large;
+  }
+
+  .container-navbar--menu {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+    .navbar-menu {
+      width: 80%;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        text-align: center;
+        font-size: large;
+        font-weight: 600;
+        color: @nav-font;
+      }
+
+    }
+  }
+}

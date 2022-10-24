@@ -1,0 +1,27 @@
+.search{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.input{
+    margin-right: .5rem;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px azure solid;
+    color: azure;
+}
+
+.button{
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}

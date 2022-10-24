@@ -13,3 +13,24 @@
 .label {
     padding-right: 10px;
 }
+
+.movie-container{
+    display: flex;
+    width: 100%;
+}
+
+.movie-item-container{
+width: 30%;
+font-size: 16px;
+}
+
+.listItem{
+    margin: 10px;
+    display: inline-block;
+}
+
+.favButton{
+    margin-left: 20px;
+    font-size: 16px;
+    margin: 10px;
+}

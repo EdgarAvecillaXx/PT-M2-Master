@@ -3,6 +3,9 @@ import { connect } from "react-redux";
 
 import './Buscador.css';
 
+// aqui se buscan y muestran los posts en forma de lista 
+// Renderiza los posts
+
 export class Buscador extends Component {
 
   handleSubmit(event) {

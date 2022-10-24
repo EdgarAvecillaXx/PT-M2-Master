@@ -4,6 +4,8 @@ import Logo from '../../logoHenry.png'
 
 import './Navbar.css';
 
+//menu de navegacion visible en todos las páginas
+
 export default function NavBar() {
     return (
         <header className="navbar">

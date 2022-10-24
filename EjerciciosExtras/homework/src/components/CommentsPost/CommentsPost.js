@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getAllCommentsPost } from '../../actions/index';
+//Se renderiza desde UserPosts
+//Renderiza los comentarios del post
+
 
 import './CommentsPost.css';
 
